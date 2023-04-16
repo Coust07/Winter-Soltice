@@ -1,0 +1,571 @@
+:root{
+    /* Colores */
+    --negro         : #393939;
+    
+    /* Tipografía */
+    --tipo-principal   : Helvetica, Arial, sans-serif;
+    --tipo-secundaria  : Verdana;
+  }
+    
+  /* (Opcional) Las adaptamos al modo oscuro */
+  @media (prefers-color-scheme: dark) {
+    :root{
+        --negro         : #ececec;
+    }
+  }
+  
+
+
+  
+  /* Reseteamos los margin y paddings de todas las etiquetas */
+  * , *::before , *::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+  }
+  *::before , *::after{
+    display: block;
+  }
+  
+  /* Evitamos problemas con las imagenes */
+  img , picture , video , iframe , figure{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    /* (Opcional) */ object-fit: cover;        
+    /* (Opcional) */ object-position: center center;
+  }
+  
+  /* Reseteamos los enlaces para funcionar como cajas... */
+  a {
+    display: block;
+    text-decoration: none;
+    color:inherit;
+    font-size:inherit;
+  }
+ 
+  
+  /* Quitamos los puntos de los <li> */
+  li {
+    list-style-type: none;
+  }
+  
+ 
+
+  /* Evitamos problemas con los pseudoelementos de quotes */
+  blockquote:before, blockquote:after, q:before, q:after {
+      content: '';
+      content: none;
+  }
+  
+
+  
+  /* Nivelamos problemas de tipografías y colocación de formularios */
+  form , input, textarea, select , button , label{
+      font-family: inherit;
+      font-size: inherit;
+      hyphens: auto;
+      background-color: transparent;
+      color:inherit;
+      display: block;
+     
+  }
+  
+
+  /* Evitamos problemas con los SVG */
+  svg{
+      width: 100%;
+      display: block;
+      fill: currentColor;
+  }
+  
+  /* Configuramos la tipografía para toda la web */
+  body {
+  
+    font-family : var(--tipo-principal);
+    color       : var(--negro);
+
+    
+  }
+
+  
+   header {
+  position: relative;
+  
+}
+
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 188px;
+  height: 100%;
+  padding-top: 20px;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align: center;
+  background-color: #38381a ;
+  opacity: .9;
+  
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  
+}
+
+.sidenav ul a:hover {
+  color: #064579;
+  padding: 5px;
+}
+
+.sidenav h1.titulo {
+  position: relative;
+  font-size: 20px;
+  top: 10px;
+  margin: 0px;
+  text-align: center;
+}
+
+.sidenav ul {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  top: 10px;
+}
+
+.sidenav li {
+  margin: 10px 0;
+}
+
+.sidenav li a {
+  display: block;
+}
+
+
+main {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.ads{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 188px;
+  height: 100%;
+  padding-top: 20px;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align: center;
+  
+  opacity: .9;
+  left: 1716px;
+  
+}
+
+.ads1{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #393939;
+  height: 50%;
+  top: -10px;
+  margin-bottom: 0px;
+  
+}
+.ads2{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #393939;
+  height: 50%;
+  
+}
+
+
+/*
+  .header{
+width: 100%;
+background-color: #38381a ;
+padding: 1rem;
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+align-items: center;
+
+
+  }
+
+  .header .Logo{
+    width: 70px;
+    height: 80px;
+  }
+
+.titulo{
+  position: relative;
+  display: flex;
+  left: 200px;
+}
+
+ 
+
+
+
+  .header .ul{
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    position: sticky;
+  }
+
+  .header .in:hover{
+    background-color: #393939;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .5s;
+  }
+
+  .header .in{
+    margin: 0 .5em;
+  }
+
+  .nav .ul {
+direction: rtl;
+
+  }
+*/
+  .nos{
+    text-align: center;
+    color: #393939;
+  }
+.first{
+   display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    
+    
+}
+  .nosotros{
+    background-image: url(/Imagenes/wsm-45.jpg);
+    width: 80%;
+    border-radius: 5px;
+    display: flex;
+   justify-content: center;
+   height: 400px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center 45% ;
+   flex-direction: column;
+   box-shadow: 10px 10px 2px;
+  }
+
+  .des{
+    text-align: center;
+  }
+
+ .sabores{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #393939;
+  margin:5px;
+ }
+
+  .secound{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+   
+  }
+
+  .productos{
+    width: 80%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+  }
+
+  .bebidas{
+    width: 500px;
+    position: relative;
+  }
+
+  .contenido{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    text-align: center;
+  }
+
+  .contenido:hover{
+    opacity: 1;
+  } 
+
+  .contenido h1{
+    font-size: 30px;
+  }
+
+  .contenido p{
+    font-size: 20px;
+  }
+
+  .productos .bebidas img{
+    border-radius: 5px;
+    box-shadow: 10px 10px 2px;
+  }
+  @media screen and (max-width:480px){
+
+.titulo{
+  left: -15px;
+  position: relative;
+}
+
+  .productos{
+    display: block;
+    right: 0px;
+    position: relative;
+    
+  }
+
+  .bebidas{
+    width: 300px;
+    position: relative;
+    margin: 10px;
+  }
+
+  .bebidas img{
+    width: 300px;
+    position: relative;
+  }
+
+}
+  
+
+
+.redes{
+  width: 80%;
+   border-radius: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100px;
+   flex-direction: row;
+   gap: 20px;
+   position: relative;
+   left: 200px;
+   top: 20px;
+
+
+}
+
+.socialw{
+  width: 3%;
+  height: 60px;
+  display: flex;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+.socialw img{
+  border-radius: 10px;
+}
+.socialf{
+  width: 3%;
+  height: 60px;
+ border-radius: 10px;
+  display: flex;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+
+.socialf img{
+  border-radius: 10px;
+}
+.sociali{
+  width: 3.3%;
+  height: 60px;
+ border-radius: 10px;
+  display: flex;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+
+.sociali img{
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+}
+
+@media screen and (max-width:480px){
+  .redes{
+    width: 80%;
+     border-radius: 5px;
+     display: flex;
+     left: 50px;
+     height: 50px;
+     flex-direction: row;
+     gap: 20px;
+     position: relative;
+     top: 20px;
+  
+  
+  }
+  
+  .socialw{
+    width: 10%;
+    height: 60px;
+    display: flex;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+  }
+  .socialw img{
+    border-radius: 10px;
+  }
+  .socialf{
+    width: 10%;
+    height: 60px;
+   border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .socialf img{
+    border-radius: 10px;
+  }
+  .sociali{
+    width: 10.3%;
+    height: 60px;
+   border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .sociali img{
+    border-radius: 10px;
+    height: 35px;
+    width: 100%;
+  }
+}
+
+  .therd{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    
+  }
+
+  .historia{
+    width: 80%;
+    border-radius: 5px;
+  display: flex;
+  background-image: url(/Imagenes/wsm-43.jpg);
+   justify-content: center;
+   height: 400px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center 45% ;
+   flex-direction: column;
+   box-shadow: 10px 10px 2px;
+    
+  }
+
+  .historiaa{
+    text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #393939;
+  margin:5px;
+  }
+
+  .winterhis{
+    text-align: center;
+    
+  }
+  
+  .contacto{
+    text-align: center;
+    margin: 5px;
+    color: #393939;
+  }
+
+.four{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+
+}
+
+
+
+
+  .fived{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    
+  }
+
+   #map{
+    width: 80%;
+    border-radius: 5px;
+  display: flex;
+  background-image: url(/Imagenes/wsm-43.jpg);
+   justify-content: center;
+   height: 400px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center 45% ;
+   flex-direction: column;
+   box-shadow: 10px 10px 2px;
+    
+  }
+
+  .maps{
+    text-align: center;
+    color: #393939;
+  }
+
+
